@@ -7,7 +7,7 @@ function iteBinSearch(array, value) {
     var init = 0;
     var end = array.length - 1;
     while (init <= end) {
-        var midle = Math.round((init + end) / 2);
+        var midle = Math.floor((init + end) / 2);
         if (value == array[midle]) {
             return array[midle];
         }
@@ -31,7 +31,7 @@ var end = olist.length - 1;
 
 function recBinSearch(array, value) {
 
-    var midle = parseInt((init + end) / 2);
+    var midle = Math.floor((init + end) / 2);
 
     if (value === array[midle]) {
         return array[midle];
